@@ -1,12 +1,8 @@
 import { Router } from "express";
-import { hellowrld } from "./hellowrld.routes";
-import { ownerRoutes } from "./owner.routes";
-import { petRoutes } from "./pet.routes";
+import { discoveryRoutes } from "./discovery.routes";
 
 const router = Router()
 
-hellowrld(router)
-ownerRoutes(router)
-petRoutes(router)
+discoveryRoutes(router)
 
 export { router }
